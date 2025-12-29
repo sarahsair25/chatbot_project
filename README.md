@@ -1,39 +1,40 @@
-# chatbot_project
-Flask NLP Chatbot 🤖A web-ba
-What It Does
+# Flask Chatbot
 
-Accepts user messages via a Flask API
+A simple web-based chatbot built with Flask.
 
-Processes text using NLTK (tokenization & lemmatization)
+## How to Run
 
-Generates responses using TF-IDF + cosine similarity
+1) Clone the repository:
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
 
-Returns results to a simple HTML/CSS frontend
+    Create a virtual environment:
 
-Tech Stack
+Windows (PowerShell)
 
-Backend: Python, Flask
+python -m venv .venv
+.venv\Scripts\Activate.ps1
 
-NLP / ML: NLTK, scikit-learn (TF-IDF, cosine similarity)
+macOS/Linux
 
-Frontend: HTML, CSS
+python3 -m venv .venv
+source .venv/bin/activate
 
-Data: Text corpus (corpus.txt)
-<img width="1536" height="1024" alt="ChatGPT Image Dec 29, 2025, 01_27_48 PM" src="https://github.com/user-attachments/assets/f0378313-379c-476d-9aa7-a6ee6ab6a112" />
+    Install dependencies:
 
-Key Features
+pip install -r requirements.txt
 
-Clean REST-style Flask API (/chat)
+    Run the app:
 
-Text preprocessing pipeline (normalization, lemmatization, stop-word removal)
+python app.py
 
-Defensive input handling & edge-case protection
+Open:
 
-GitHub-ready, maintainable project structure
-
-Easily extensible to transformer-based models or deployment platforms
+    http://127.0.0.1:5000
 
 Project Structure
+
 chatbot_project/
 ├── app.py
 ├── chatbot.py
@@ -42,6 +43,30 @@ chatbot_project/
 │   └── index.html
 └── static/
     └── style.css
+
+
+---
+
+## 5) Push to GitHub
+In the project folder:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-repo>.git
+git push -u origin main
+
+### Download NLTK data (first run only)
+Run this once:
+```bash
+python -c "import nltk; nltk.download('punkt'); nltk.download('wordnet'); nltk.download('omw-1.4')"
+
+Data: Text corpus (corpus.txt)
+<img width="1536" height="1024" alt="ChatGPT Image Dec 29, 2025, 01_27_48 PM" src="https://github.com/user-attachments/assets/f0378313-379c-476d-9aa7-a6ee6ab6a112" />
+
+
 
 
 
