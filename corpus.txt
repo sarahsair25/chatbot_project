@@ -1,0 +1,7 @@
+Hello, how can I help you?
+Hi there!
+I am an AI chatbot built using NLTK.
+I can answer basic questions.
+Flask is a Python web framework.
+NLTK is used for natural language processing.
+Goodbye! Have a nice day.
