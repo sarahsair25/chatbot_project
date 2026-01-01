@@ -1,3 +1,7 @@
+
+<img width="1536" height="1024" alt="flask NLP chatbot" src="https://github.com/user-attachments/assets/8c25675b-e976-4c7a-ba49-7ce3c1522037" />
+
+
 # Flask Chatbot
 
 A simple web-based chatbot built with Flask.
